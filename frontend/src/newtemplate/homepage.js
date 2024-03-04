@@ -6,15 +6,17 @@ import DashboardCard from '../pages/innerpage/dashboardpages/dashboardCards';
 import DashboardTable from '../pages/innerpage/dashboardpages/dashboardTable';
 
 const Home = () => {
-  const navigate = useNavigate(); 
-  useEffect( ()=>{
-      const validateAccess = localStorage.getItem('loginUser');
-      if(validateAccess == null){
-        alert('You need to log in First.')  
-        navigate('/login');
-      }
+
+  // For project deployment
+  // const navigate = useNavigate(); 
+  // useEffect( ()=>{
+  //     const validateAccess = localStorage.getItem('loginUser');
+  //     if(validateAccess == null){
+  //       alert('You need to log in First.')  
+  //       navigate('/login');
+  //     }
       
-  }, []); 
+  // }, []); 
     
      
 

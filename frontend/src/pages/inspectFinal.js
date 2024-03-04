@@ -17,16 +17,16 @@ const Todo = () => {
     setOpenSidebarToggle(!openSidebarToggle)
   }
 
-  var navigate = useNavigate(); 
-  useEffect( ()=>{
-      const validateAccess = localStorage.getItem('loginUser');
+  // var navigate = useNavigate(); 
+  // useEffect( ()=>{
+  //     const validateAccess = localStorage.getItem('loginUser');
       
-      if(validateAccess == null){
-        navigate('/login');
-        alert('You need to log in first')
-      }
+  //     if(validateAccess == null){
+  //       navigate('/login');
+  //       alert('You need to log in first')
+  //     }
       
-  }, []); 
+  // }, []); 
 
   return (
     <div className='grid-container'>

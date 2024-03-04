@@ -12,16 +12,16 @@ import NewHeader from '../newtemplate/header';
 import NewSidebar from '../newtemplate/sidebar';
 
 const MainDashboard = () => {
-
-  var navigate = useNavigate(); 
-  useEffect( ()=>{
-      const validateAccess = localStorage.getItem('loginUser');
-      if(validateAccess == null){
-        alert('You need to log in First.')
-        navigate('/login');
-      }
+  // For project deployment
+  // var navigate = useNavigate(); 
+  // useEffect( ()=>{
+  //     const validateAccess = localStorage.getItem('loginUser');
+  //     if(validateAccess == null){
+  //       alert('You need to log in First.')
+  //       navigate('/login');
+  //     }
       
-  }, []); 
+  // }, []); 
 
   return (
     
