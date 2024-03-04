@@ -1,0 +1,110 @@
+/* Sidebar.css */
+
+/* Logo Section */
+.py-4 {
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+  }
+  
+  .text-primary {
+    color: #3498db;
+  }
+  
+  /* Navigation Links */
+  .flex-column {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+  
+  /* Active Link */
+  .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Logged in Section */
+  .py-4:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: auto;
+  }
+  
+  .text-light {
+    color: #888;
+  }
+
+  
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.36);
+    margin: 8px 0;
+  }
+  
+
+  /* App.css */
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+#content {
+  padding: 20px;
+  width: calc(100% - 250px);
+}
+
+/* App.css */
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+#sidebar {
+  height: 100vh;
+  width: 250px;
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+/* log in css  */
+.login-container {
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+
+  
+}
+
+.maincontainer {
+  height: 100vh; /* Adjust the height as needed */
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://img.freepik.com/free-photo/construction-site-silhouettes_1127-3253.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+/* img {
+  filter: brightness(0.5);
+} */
