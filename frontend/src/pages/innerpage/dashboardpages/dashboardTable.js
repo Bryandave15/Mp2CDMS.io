@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
-import BootstrapTable from 'react-bootstrap-table-next';
-import paginationFactory from 'react-bootstrap-table2-paginator';
+import ReactTableExample from './table';
 
 const DashboardTable = () => {
   const [data, setData] = useState([]);
@@ -55,17 +53,10 @@ const DashboardTable = () => {
   ];
 
   return (
-    <Container >
-      <h3 className='text-center text-dark bg-warning 'style={{ borderBottom: '2px solid black' }}> Latest Added</h3>
-      <BootstrapTable
-        bootstrap5
-        classes='text-center table-striped '
-        keyField="id"
-        data={data}
-        columns={columns}
-        pagination={paginationFactory({ sizePerPage: 5 })}
-      />
-    </Container>
+    <div>
+    <h1 className='text-center text-dark'>Latest added </h1>
+    <ReactTableExample data={data} />
+  </div>
   );
 };
 
